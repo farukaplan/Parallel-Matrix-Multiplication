@@ -1,6 +1,3 @@
-// Faruk KAPLAN
-// 21050111026
-
 // For compile: mpicc -o p2p point-to-point.c
 // For run: mpiexec -n 4 ./p2p BigA.txt BigX.txt (you can change core number or file names)
 
