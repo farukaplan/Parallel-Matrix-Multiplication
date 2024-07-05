@@ -11,3 +11,5 @@ This repo contains 3 main files:
 There is an information at the beginning of the each file that how you can compile and run files
 
 When you run the code, you can change input file names and core number, input file format should be same as my input files, also give proper number for cores
+
+In report, there is a discussion about times with different cores and different communication protocols
