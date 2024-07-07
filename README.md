@@ -1,15 +1,30 @@
-# Parallel-Matrix-Multiplication
+# Parallel Matrix Multiplication with MPI
 
-This repo contains 3 main files: 
+## Build and Run
+```sh	
+# Sequential program
+mpicc -o sequential sequential.c
+mpiexec -n 1 ./sequential data/BigA.txt data/BigX.txt
+```
 
-1-) Sequential.c: This c code multiplies matrices in traditional, sequential way
+```sh
+# Parallel p2p program
+mpicc -o p2p point-to-point.c
+mpiexec -n 4 ./p2p data/BigA.txt data/BigX.txt
+```
 
-2-) Point-to-point.c: This c code is parallelized version of first file, but only using point to point communication protocols (MPI_Send and MPI_Recv)
+```sh
+# Parallel collvetive program
+mpicc -o collective collective.c
+mpiexec -n 4 ./collective data/BigA.txt data/BigX.txt
+```
 
-3-) Collective.c: This c code is also parallelized version of first file, but also using collective MPI functions
+You can apply this to desired matrices, by simply changing the input txt names
+- Don't forget, the matrix dimensions should be match, otherwise it does not work
 
-There is an information at the beginning of the each file that how you can compile and run files
+Also you can adjust the core number for parallel program as you wish
+- The core number can be 1, 2, 4, 8, 16 and goes on
+- Don't exceed your computer's limitations
 
-When you run the code, you can change input file names and core number, input file format should be same as my input files, also give proper number for cores
-
-In report, there is a discussion about times with different cores and different communication protocols
+## Discussion
+You can find an explanation of codes and discussion about how execution time changes when we change core number, and other stuff in Report.pdf

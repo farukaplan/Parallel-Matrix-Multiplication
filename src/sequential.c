@@ -1,3 +1,6 @@
+// Faruk KAPLAN
+// 21050111026
+
 // For compile: mpicc -o sequential sequential.c
 // For run: mpiexec -n 1 ./sequential BigA.txt BigX.txt (you can change the file names)
 

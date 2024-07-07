@@ -1,0 +1,12 @@
+# Ignore Mac system files
+.DS_Store
+
+# Ignore node_modules directory
+node_modules/
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore build output
+dist/
+build/
