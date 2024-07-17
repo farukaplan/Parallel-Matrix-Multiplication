@@ -1,9 +1,3 @@
-// Faruk KAPLAN
-// 21050111026
-
-// For compile: mpicc -o collective collective.c
-// For run: mpiexec -n 4 ./collective BigA.txt BigX.txt (you can change core number or file names)
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
