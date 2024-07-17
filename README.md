@@ -28,3 +28,6 @@ Also you can adjust the core number for parallel program as you wish
 
 ## Discussion
 You can find an explanation of codes and discussion about how execution time changes when we change core number, and other stuff in Report.pdf
+
+## To Do
+- [ ] Write makefile
